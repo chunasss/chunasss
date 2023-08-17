@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let troco, nota100, nota50, nota10
+
+troco = Number(prompt("digite o valor de saque:"))
+if(troco % 10 == 0){
+nota100 = parseInt(troco / 100)
+nota50 = parseInt((troco % 100) / 50)
+nota10 = parseInt(((troco % 100) % 50) / 10)
+
+alert("valor 100: " + nota100 + "\nValor nota50 : " + nota50+ "\nValor nota10 : " + nota10)
+}else{
+   alert("o sistema só possui notas de 100,  50, 10")
+}
+
+    </script>
+</body>
+</html>

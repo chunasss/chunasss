@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let velocidadePermitida, velocidadeCondutor, multa
+
+velocidadePermitida = Number(prompt("digite a velocidade permitida da VIA"))
+velocidadeCondutor = Number(prompt("digite a velocidade do condutor"))
+multa= velocidadePermitida * 1.2
+
+if(velocidadeCondutor <=velocidadePermitida){
+alert("multa")
+}else if (velocidadeCondutor > velocidadePermitida && velocidadeCondutor <=multa){
+alert("multa leve!")
+}else if (velocidadeCondutor > multa){
+alert("multa grave")
+}
+
+
+    </script>
+</body>
+</html>

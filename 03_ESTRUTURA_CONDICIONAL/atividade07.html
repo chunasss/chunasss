@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Solicitar ao usuário para inserir um número
+let numero = Number(prompt("Digite um número para ver a tabuada:"));
+
+// Verificar se o número é válido
+if (isNaN(numero)) {
+  console.log("Por favor, insira um número válido.");
+} else {
+  console.log(`Tabuada do ${numero}:`);
+  
+  // Calcular e exibir a tabuada
+  for (let i = 1; i <= 10; i++) {
+    let resultado = numero * i;
+   document.write(`${numero} x ${i} = ${resultado} <br>`);
+  }
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>

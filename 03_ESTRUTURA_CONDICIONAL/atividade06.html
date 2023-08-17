@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let ladoA, ladoB, ladoC
+
+LadoA  = Number(prompt("digite o lado A no triângulo"))
+LadoB  = Number(prompt("digite o lado B no triângulo"))
+LadoC  = Number(prompt("digite o lado C no triângulo"))
+
+if(ladoA > (ladoB + ladoC)&& ladoB> (ladoA+ladC) && ladoC> (ladoA + ladoB)){
+alert("não é possivel formar um triângulo com esses valores")
+
+}else{
+if(ladoA === ladoB && ladoB === ladoC){
+alert("triângulo Equilátero")
+}else if (ladoA === ladoB || ladoA ===ladoC || ladoB ==ladoC ){
+alert("triângulo Isósceles")
+}else{
+alert("triângulo escaleno")
+}
+}
+    </script>
+</body>
+</html>
