@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programa de Cálculo</title>
+</head>
+<body>
+  <h1>Programa de Cálculo</h1>
+  <p>Este programa calcula o dobro para números pares e o triplo para números ímpares.</p>
+  <p>Insira 0 para sair.</p>
+  <input type="number" id="inputNumber">
+  <button id="calculateButton">Calcular</button>
+  <p id="result"></p>
+
+  <script>
+    const inputNumber = document.getElementById("inputNumber");
+    const calculateButton = document.getElementById("calculateButton");
+    const result = document.getElementById("result");
+
+    function processNumber() {
+      const number = parseInt(inputNumber.value);
+
+      if (isNaN(number)) {
+        result.textContent = "Valor inválido. Insira um número válido.";
+      } else if (number === 0) {
+        result.textContent = "Programa encerrado.";
+      } else if (number % 2 === 0) {
+        result.textContent = `O dobro de ${number} é ${number * 2}.`;
+      } else {
+        result.textContent = `O triplo de ${number} é ${number * 3}.`;
+      }
+
+      inputNumber.value = "";
+      inputNumber.focus();
+    }
+
+    calculateButton.addEventListener("click", processNumber);
+  </script>
+</body>
+</html>
